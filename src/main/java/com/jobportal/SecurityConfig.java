@@ -43,13 +43,7 @@ public class SecurityConfig {
                                 "/users/sendOtp/email/**",
                                 "/auth/login/with/otp/email",
                                 "/auth/login/with/otp/mobile",
-<<<<<<< HEAD
-                                "/users/verifyOtp/mobile/**",
-                               "/jobs/postedBy/**",
-                                "/profiles/get/**"
-=======
                                 "/users/verifyOtp/mobile/**"
->>>>>>> ca035a1b03e7f7c2dad627b3b07e50466d5b53a2
 
                         ).permitAll()
                         .anyRequest().authenticated()
@@ -67,11 +61,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-<<<<<<< HEAD
         config.setAllowedOrigins(List.of("http://localhost:3000")); // or "*" for all
-=======
-        config.setAllowedOrigins(List.of("https://job-portal-r00q.onrender.com")); // or "*" for all
->>>>>>> ca035a1b03e7f7c2dad627b3b07e50466d5b53a2
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("Authorization", "Content-Type"));
         config.setAllowCredentials(true); // allow credentials if needed

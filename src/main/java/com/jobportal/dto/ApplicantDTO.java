@@ -20,16 +20,11 @@ public class ApplicantDTO {
     private LocalDateTime timestamp;
     private ApplicationStatus applicationStatus;
     private  LocalDateTime interviewTime;
-<<<<<<< HEAD
     private String latitude;
     private String longitude;
-    private String locations;
+    private  String locations;
     public Applicant toEntity(){
-        return new Applicant(this.applicantId,this.name,this.email,this.phone,this.website,this.resume!=null? Base64.getDecoder().decode(this.resume):null,this.coverLetter,this.timestamp ,this.applicationStatus,this.interviewTime, this.latitude, this.longitude,this.locations);
-=======
-    public Applicant toEntity(){
-        return new Applicant(this.applicantId,this.name,this.email,this.phone,this.website,this.resume!=null? Base64.getDecoder().decode(this.resume):null,this.coverLetter,this.timestamp ,this.applicationStatus,this.interviewTime);
->>>>>>> ca035a1b03e7f7c2dad627b3b07e50466d5b53a2
+        return new Applicant(this.applicantId,this.name,this.email,this.phone,this.website,this.resume!=null? Base64.getDecoder().decode(this.resume):null,this.coverLetter,this.timestamp ,this.applicationStatus,this.interviewTime,this.latitude,this.longitude,this.locations);
 
     }
 }
