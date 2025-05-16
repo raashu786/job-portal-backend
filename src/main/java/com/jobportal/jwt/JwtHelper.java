@@ -63,6 +63,7 @@ public class JwtHelper {
         // Add user-specific details to the claims
         claims.put("id", customUser.getId());
         claims.put("name", customUser.getName());
+        claims.put("accountType", customUser.getAccountType());
         claims.put("mobile", customUser.getMobile());
         claims.put("profileId", customUser.getProfileId());
         if (customUser.getEmail() != null) {
