@@ -25,8 +25,9 @@ public class Job {
     private String about;
     private String experiences;
     private String jobType;
+// TEST LINE: Confirming GitHub update
 
-    
+
     private String location;
     private Long packageOffered;
     private LocalDateTime postTime;
