@@ -64,9 +64,9 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-       config.setAllowedOriginPatterns(List.of("http://localhost:3000"));
+       //config.setAllowedOriginPatterns(List.of("http://localhost:3000"));
 
-        //config.setAllowedOrigins(List.of("https://job-portal-r00q.onrender.com")); // or "*" for all
+        config.setAllowedOriginPatterns(List.of("https://job-portal-r00q.onrender.com")); // or "*" for all
         //config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.addAllowedMethod("*");
 
