@@ -24,6 +24,7 @@ public class MessageDTO {
     private String file;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+    
     private String receiverName;
     private boolean isTyping;
     private boolean senderDeleted = false;

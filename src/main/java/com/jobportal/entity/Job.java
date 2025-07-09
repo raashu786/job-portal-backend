@@ -25,6 +25,8 @@ public class Job {
     private String about;
     private String experiences;
     private String jobType;
+
+    
     private String location;
     private Long packageOffered;
     private LocalDateTime postTime;
