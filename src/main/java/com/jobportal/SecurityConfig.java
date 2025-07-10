@@ -39,6 +39,7 @@ public class SecurityConfig {
                                 "/users/sendOtp/**",
                                 "/api/messages/**",
                                 "/profiles/getAll",
+                                "/profiles/get/**",
                                 "/users/sendOtp/mobile/**",
                                 "/users/sendOtpReg/mobile/**",
                                 "/users/sendOtp/email/**",
